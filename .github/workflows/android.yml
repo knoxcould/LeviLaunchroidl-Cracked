@@ -1,4 +1,4 @@
-Name: Android CI
+name: Android CI
 
 on:
   workflow_dispatch:
@@ -88,7 +88,6 @@ jobs:
         uses: android-actions/setup-android@v3
         with:
           packages: platform-tools
-
 
       - name: Accept Licenses
         run: yes | sdkmanager --licenses
