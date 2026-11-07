@@ -1,6 +1,7 @@
-name: Android CI
+Name: Android CI
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - '*'
@@ -151,3 +152,4 @@ jobs:
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
